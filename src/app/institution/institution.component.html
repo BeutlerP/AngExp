@@ -1,0 +1,56 @@
+<div class="card border-primary shadow-sm">
+  <h1 class="card-header text-center bg-primary text-white">
+    Institution
+  </h1>
+  <div class="card-body text-dark bg-light">
+    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+      <div>
+        <div class="mb-3">
+          <label for="institutionsname" class="form-label">
+            Institutionsname
+          </label>
+          <input
+            id="institutionsname"
+            type="text"
+            formControlName="institutionsname"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="kurzbezeichnung" class="form-label">
+            Kurzbezeichnung
+          </label>
+          <input
+            id="kurzbezeichnung"
+            type="text"
+            formControlName="kurzbezeichnung"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="rechtsform" class="form-label">
+            Rechtsform
+          </label>
+          <input
+            id="rechtsform"
+            type="text"
+            formControlName="rechtsform"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="gruendungsdatum" class="form-label">
+            Gruendungsdatum
+          </label>
+          <input
+            id="gruendungsdatum"
+            type="date"
+            formControlName="gruendungsdatum"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <button class="button" type="submit">Aendern</button>
+    </form>
+  </div>
+</div>
